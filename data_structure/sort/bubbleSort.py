@@ -2,8 +2,8 @@
 # 每一轮遍历都将下一个最大值放到正确的位置上。
 
 def bubbleSort(alist):
-    for i in range(len(alist) - 1, 0, -1):
-        for j in range(i):
+    for i in range(len(alist) - 1):
+        for j in range(len(alist) - 1 - i):
             if alist[j] > alist[j + 1]:
                 alist[j], alist[j + 1] = alist[j + 1], alist[j]
 
